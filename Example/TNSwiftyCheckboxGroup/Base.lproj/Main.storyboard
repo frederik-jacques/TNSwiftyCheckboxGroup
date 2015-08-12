@@ -1,25 +1,289 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="n9r-9R-hAD">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--TNSwiftyCheckboxGroup-->
+        <scene sceneID="eAK-X9-d4J">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                <tableViewController title="TNSwiftyCheckboxGroup" id="0fh-zN-QWE" customClass="MainMenuViewController" customModule="TNSwiftyCheckboxGroup_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hr2-ah-TRZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="KcE-lm-IUF">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="VuH-6l-xL5" style="IBUITableViewCellStyleDefault" id="fti-ng-WPX">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fti-ng-WPX" id="CJ5-5h-vOm">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Square checkboxes (storyboard)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VuH-6l-xL5">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="S2x-yk-ZvB" kind="show" id="20d-bu-Jfj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="wqW-9e-HCD" style="IBUITableViewCellStyleDefault" id="GHF-tV-knD">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GHF-tV-knD" id="m5c-QU-DWX">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Circular checkboxes (storyboard)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wqW-9e-HCD">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="QV4-4f-eK8" kind="show" id="t9w-74-9UU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="wCa-F5-qaV" style="IBUITableViewCellStyleDefault" id="eWb-UR-G1W">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eWb-UR-G1W" id="bNH-2G-llN">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Image checkboxes (storyboard)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wCa-F5-qaV">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="b0f-fL-IEj" kind="show" id="KKk-xi-YFF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="paz-aM-IPw" style="IBUITableViewCellStyleDefault" id="Rwm-aS-2NV">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rwm-aS-2NV" id="9T0-m1-zLv">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Programmatically" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="paz-aM-IPw">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="0fh-zN-QWE" id="wOO-nG-7ih"/>
+                            <outlet property="delegate" destination="0fh-zN-QWE" id="uj6-6X-mR8"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="IsL-y2-G7R"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QWb-AZ-hg5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1283" y="1226"/>
+        </scene>
+        <!--Circular checkboxes-->
+        <scene sceneID="YRl-7D-5gU">
+            <objects>
+                <viewController title="Circular checkboxes" id="QV4-4f-eK8" customClass="CircularCheckboxesViewController" customModule="TNSwiftyCheckboxGroup_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oya-yz-dft"/>
+                        <viewControllerLayoutGuide type="bottom" id="neF-ki-Xni"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gHi-9a-UQi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jhw-5w-Jdb">
+                                <rect key="frame" x="16" y="8" width="568" height="520"/>
+                                <connections>
+                                    <segue destination="0pU-wr-DS7" kind="embed" identifier="seg-circular-checkboxes" id="IW9-ZQ-eT7"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jhw-5w-Jdb" firstAttribute="leading" secondItem="gHi-9a-UQi" secondAttribute="leadingMargin" id="OMG-f0-9l1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jhw-5w-Jdb" secondAttribute="trailing" id="aXt-hd-Ifl"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="jhw-5w-Jdb" secondAttribute="bottom" constant="8" id="gtL-cj-zoY"/>
+                            <constraint firstItem="jhw-5w-Jdb" firstAttribute="top" secondItem="Oya-yz-dft" secondAttribute="bottom" constant="8" id="jLB-wY-3FP"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cro-uQ-fJK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1987" y="1943"/>
+        </scene>
+        <!--Image checkboxes-->
+        <scene sceneID="qnD-VK-R09">
+            <objects>
+                <viewController title="Image checkboxes" id="b0f-fL-IEj" customClass="ImageCheckboxesViewController" customModule="TNSwiftyCheckboxGroup_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iLz-fA-FM9"/>
+                        <viewControllerLayoutGuide type="bottom" id="qLo-pb-ZZJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gUn-Qx-uGN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vDY-0o-TX7">
+                                <rect key="frame" x="16" y="8" width="568" height="520"/>
+                                <connections>
+                                    <segue destination="uTC-jo-8ZK" kind="embed" identifier="seg-image-checkboxes" id="ZDi-eI-2mr"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qLo-pb-ZZJ" firstAttribute="top" secondItem="vDY-0o-TX7" secondAttribute="bottom" constant="8" id="iop-xW-ShF"/>
+                            <constraint firstItem="vDY-0o-TX7" firstAttribute="leading" secondItem="gUn-Qx-uGN" secondAttribute="leadingMargin" id="ngc-My-Avb"/>
+                            <constraint firstItem="vDY-0o-TX7" firstAttribute="top" secondItem="iLz-fA-FM9" secondAttribute="bottom" constant="8" id="qhr-D5-LJ4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vDY-0o-TX7" secondAttribute="trailing" id="ueR-3b-0Aa"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x7v-Tv-EhS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1987" y="2679"/>
+        </scene>
+        <!--Swifty Checkbox View Controller-->
+        <scene sceneID="Wrf-KV-YVr">
+            <objects>
+                <collectionViewController id="uTC-jo-8ZK" customClass="TNSwiftyCheckboxViewController" customModule="TNSwiftyCheckboxGroup" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="tIA-si-PQW">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="520"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IpT-z0-bMs">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="uTC-jo-8ZK" id="kfD-p1-Lsh"/>
+                            <outlet property="delegate" destination="uTC-jo-8ZK" id="xXO-IV-gnI"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TkJ-gb-3BM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2695" y="2679"/>
+        </scene>
+        <!--Swifty Checkbox View Controller-->
+        <scene sceneID="V9m-eX-I7V">
+            <objects>
+                <collectionViewController id="0pU-wr-DS7" customClass="TNSwiftyCheckboxViewController" customModule="TNSwiftyCheckboxGroup" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="URH-T0-Ifp">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="520"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9To-2T-vTG">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="0pU-wr-DS7" id="0Mu-yK-TU2"/>
+                            <outlet property="delegate" destination="0pU-wr-DS7" id="qot-0v-dKe"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Btx-2A-GP3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2679" y="1943"/>
+        </scene>
+        <!--Square checkboxes-->
+        <scene sceneID="W69-U0-a6s">
+            <objects>
+                <viewController title="Square checkboxes" id="S2x-yk-ZvB" customClass="SquareCheckboxesViewController" customModule="TNSwiftyCheckboxGroup_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Kq-Hf-aQJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="aaK-Ii-9lL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hXx-MI-xSX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EQh-PY-XY7">
+                                <rect key="frame" x="16" y="8" width="568" height="520"/>
+                                <connections>
+                                    <segue destination="bAi-at-DCB" kind="embed" identifier="seg-square-checkboxes" id="Kk7-MB-QIT"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EQh-PY-XY7" firstAttribute="top" secondItem="8Kq-Hf-aQJ" secondAttribute="bottom" constant="8" id="FGy-hY-09F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EQh-PY-XY7" secondAttribute="trailing" id="VeV-jV-LxU"/>
+                            <constraint firstItem="aaK-Ii-9lL" firstAttribute="top" secondItem="EQh-PY-XY7" secondAttribute="bottom" constant="8" id="y2w-EP-BUi"/>
+                            <constraint firstItem="EQh-PY-XY7" firstAttribute="leading" secondItem="hXx-MI-xSX" secondAttribute="leadingMargin" id="yl9-Li-EO6"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iTg-fV-3rX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1987" y="1226"/>
+        </scene>
+        <!--Swifty Checkbox View Controller-->
+        <scene sceneID="3Vb-EW-tuX">
+            <objects>
+                <collectionViewController id="bAi-at-DCB" customClass="TNSwiftyCheckboxViewController" customModule="TNSwiftyCheckboxGroup" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="mJf-5v-2JG">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="520"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="221-WN-Ytj">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="bAi-at-DCB" id="uhE-0C-aGr"/>
+                            <outlet property="delegate" destination="bAi-at-DCB" id="OnG-CS-REB"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="na9-ql-mXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2679" y="1226"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="R3B-iP-1Qo">
+            <objects>
+                <navigationController id="n9r-9R-hAD" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YE1-vY-qHD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="0fh-zN-QWE" kind="relationship" relationship="rootViewController" id="Z1e-Xu-gkZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DY9-Z0-obX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="463" y="1226"/>
         </scene>
     </scenes>
 </document>
