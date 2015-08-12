@@ -1,0 +1,6 @@
+framework module Pods_TNSwiftyCheckboxGroup_Tests {
+  umbrella header "Pods-TNSwiftyCheckboxGroup_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

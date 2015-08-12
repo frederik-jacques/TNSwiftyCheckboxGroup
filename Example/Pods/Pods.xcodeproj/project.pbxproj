@@ -1,0 +1,848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		082D4574ACB96E7BC23B927071050E4F /* TNSwiftySquareCheckboxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE086FC2D8BBDC2C23D57651D3FD02B8 /* TNSwiftySquareCheckboxView.xib */; };
+		14104970462B2D4F2D15218D2F6BA47A /* TNSwiftySquareCheckboxView.xib in Sources */ = {isa = PBXBuildFile; fileRef = DE086FC2D8BBDC2C23D57651D3FD02B8 /* TNSwiftySquareCheckboxView.xib */; };
+		21A315583A1D79BBAE310A3B3E1964D6 /* TNSwiftyCheckboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0A754B1F268112A1B54A33387DD75B /* TNSwiftyCheckboxViewController.swift */; };
+		27DB1947F7244B57AFC5E9EC71BAB172 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58361529F4AFCF53BBDA62C2ABF88478 /* Foundation.framework */; };
+		2DF10A177820BBA515E4F6035C14FC3F /* TNSwiftyImageCheckboxView.xib in Sources */ = {isa = PBXBuildFile; fileRef = BC7746FAD650EA62CCA4D7A7995F0B95 /* TNSwiftyImageCheckboxView.xib */; };
+		35CD4250AFA6D038B8C3AA4F0065A3AF /* TNSwiftySquareCheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BCE1A96EF1F8B56E9622C3D349CB4B /* TNSwiftySquareCheckboxView.swift */; };
+		36DF767B2D6C9906DE42422898591E9B /* TNSwiftyCheckboxGroup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FFCA250EB5E500CA5B6EADBE716D29F /* TNSwiftyCheckboxGroup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4AEFB39804885EBAE40BED1547923E /* TNSwiftyCircularCheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0A1974697BA434F37FD7EB415D67D9 /* TNSwiftyCircularCheckboxView.swift */; };
+		3C9ACF250B0BA41B725EB070A0B0F186 /* TNSwiftyCheckboxCustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E56BAF401AF5DB360482E9F7AF17FE3 /* TNSwiftyCheckboxCustomLayout.swift */; };
+		4EACA22B4B65474329D4D0F47942FAA3 /* TNSwiftyCircularCheckboxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F2E17161E3476138F4B53BAF6A1B974 /* TNSwiftyCircularCheckboxView.xib */; };
+		86E8BC121B78D9E5008441E7 /* Dictionary_Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E8BC111B78D9E5008441E7 /* Dictionary_Merge.swift */; };
+		A4FB792C9E377D333EEACA6FED967A71 /* TNSwiftyCheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F14CEFEAB2B905F5F57E5D5B30236 /* TNSwiftyCheckboxView.swift */; };
+		A965063A9E16C7C42A20190F399AC82E /* TNSwiftyImageCheckboxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC7746FAD650EA62CCA4D7A7995F0B95 /* TNSwiftyImageCheckboxView.xib */; };
+		AECD06E0368EAD990793459282E5B7C0 /* Pods-TNSwiftyCheckboxGroup_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7204AA2986051DD011BF4C6DA9558AC /* Pods-TNSwiftyCheckboxGroup_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5DE0B78A403A7ED1EAF111BBEAC7D69 /* TNSwiftyCheckboxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE999837A015A776A59228534549D3EB /* TNSwiftyCheckboxModel.swift */; };
+		C2E47439423C0E1C01C64E48225BA2D8 /* TNSwiftyCheckboxGroup.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E5ED5B01A6C4C2943586DF3B6870A5EA /* TNSwiftyCheckboxGroup.bundle */; };
+		C3A870513AC87E1C186C7E08B6BE6ECA /* TNSwiftyImageCheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE36658098967EE364FF5629E20C29 /* TNSwiftyImageCheckboxView.swift */; };
+		C72596E53F435E7E89B3174736D047F9 /* Pods-TNSwiftyCheckboxGroup_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BCFF55372CABF51B1C5B0ABD96A83631 /* Pods-TNSwiftyCheckboxGroup_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C958A69661E0B43B6A232EA0FB337A96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58361529F4AFCF53BBDA62C2ABF88478 /* Foundation.framework */; };
+		DF8640C067B43F9F22B2DDFF274F5AEB /* TNSwiftyCircularCheckboxView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 5F2E17161E3476138F4B53BAF6A1B974 /* TNSwiftyCircularCheckboxView.xib */; };
+		E6323B7A7B6ABA18054A83F771E50FCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58361529F4AFCF53BBDA62C2ABF88478 /* Foundation.framework */; };
+		F2FC9732B2028D3BEEA71165DDFD70E8 /* TNSwiftyCheckboxGroup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B7AE0D740E9B974D917C11A8280A7A /* TNSwiftyCheckboxGroup-dummy.m */; };
+		F490E467ED4FF0DBB801FD522D2B86A0 /* Pods-TNSwiftyCheckboxGroup_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE9A7B532DA8B68437E1E19875F732C /* Pods-TNSwiftyCheckboxGroup_Example-dummy.m */; };
+		FBCE2B40E2A0BA7B602E36A4B8F2D976 /* Pods-TNSwiftyCheckboxGroup_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0921464328F34459F008E2ED09A4198A /* Pods-TNSwiftyCheckboxGroup_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C08FA46480ED92480FC9B28AF04B568 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F599DE5108DA55E114F4B4AEB84B190;
+			remoteInfo = "TNSwiftyCheckboxGroup-TNSwiftyCheckboxGroup";
+		};
+		7A171F1055F3E78089D6F003EF4EAC56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB2EB2097A4C7B1070B8DCAEBF87AF8F;
+			remoteInfo = TNSwiftyCheckboxGroup;
+		};
+		EC7EEE5ADFD86E49A3E4AA332A77C5C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB2EB2097A4C7B1070B8DCAEBF87AF8F;
+			remoteInfo = TNSwiftyCheckboxGroup;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01F73E5C5AB8051597A454360825B8D5 /* TNSwiftyCheckboxGroup-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "TNSwiftyCheckboxGroup-Private.xcconfig"; sourceTree = "<group>"; };
+		0921464328F34459F008E2ED09A4198A /* Pods-TNSwiftyCheckboxGroup_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TNSwiftyCheckboxGroup_Tests-dummy.m"; sourceTree = "<group>"; };
+		0E56BAF401AF5DB360482E9F7AF17FE3 /* TNSwiftyCheckboxCustomLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TNSwiftyCheckboxCustomLayout.swift; sourceTree = "<group>"; };
+		178264055B9151457F113C35951F281D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		210972295AB75238BF82CEB6808E1CD0 /* Pods-TNSwiftyCheckboxGroup_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TNSwiftyCheckboxGroup_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2607C9A7F168FC818451DF637BD925F3 /* Pods-TNSwiftyCheckboxGroup_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TNSwiftyCheckboxGroup_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		297892C9F2EA022CAB1C8D30CE1EDCB7 /* Pods-TNSwiftyCheckboxGroup_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TNSwiftyCheckboxGroup_Example-resources.sh"; sourceTree = "<group>"; };
+		472496463935F7A4A1CF8F8471057581 /* Pods-TNSwiftyCheckboxGroup_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TNSwiftyCheckboxGroup_Example.modulemap"; sourceTree = "<group>"; };
+		4992FC6581AF64FD04D699C4F78EF51B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5247A7867F17E311BFD596F5EA501D16 /* Pods_TNSwiftyCheckboxGroup_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TNSwiftyCheckboxGroup_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58361529F4AFCF53BBDA62C2ABF88478 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		586277670347FC14D8AA31231AF39EE9 /* Pods-TNSwiftyCheckboxGroup_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TNSwiftyCheckboxGroup_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5F2E17161E3476138F4B53BAF6A1B974 /* TNSwiftyCircularCheckboxView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = TNSwiftyCircularCheckboxView.xib; sourceTree = "<group>"; };
+		6A9361D8CE9D2645B3948A21DFF9C21D /* Pods_TNSwiftyCheckboxGroup_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TNSwiftyCheckboxGroup_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D10ED5E30A400A0DF68D10DD3AA8E10 /* Pods-TNSwiftyCheckboxGroup_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TNSwiftyCheckboxGroup_Tests-resources.sh"; sourceTree = "<group>"; };
+		72D4EE75271184F2CCAB1406C73ACD4A /* Pods-TNSwiftyCheckboxGroup_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TNSwiftyCheckboxGroup_Tests.modulemap"; sourceTree = "<group>"; };
+		7F1F14CEFEAB2B905F5F57E5D5B30236 /* TNSwiftyCheckboxView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TNSwiftyCheckboxView.swift; sourceTree = "<group>"; };
+		7FFCA250EB5E500CA5B6EADBE716D29F /* TNSwiftyCheckboxGroup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TNSwiftyCheckboxGroup-umbrella.h"; sourceTree = "<group>"; };
+		82EE36658098967EE364FF5629E20C29 /* TNSwiftyImageCheckboxView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TNSwiftyImageCheckboxView.swift; sourceTree = "<group>"; };
+		86E8BC111B78D9E5008441E7 /* Dictionary_Merge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary_Merge.swift; sourceTree = "<group>"; };
+		8B0A1974697BA434F37FD7EB415D67D9 /* TNSwiftyCircularCheckboxView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TNSwiftyCircularCheckboxView.swift; sourceTree = "<group>"; };
+		90E99DC83F30D328BAFF64D7853EE810 /* TNSwiftyCheckboxGroup-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TNSwiftyCheckboxGroup-prefix.pch"; sourceTree = "<group>"; };
+		93BCE1A96EF1F8B56E9622C3D349CB4B /* TNSwiftySquareCheckboxView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TNSwiftySquareCheckboxView.swift; sourceTree = "<group>"; };
+		AA597CCC7BBC0F14D49E1DAFAAE785F5 /* Pods-TNSwiftyCheckboxGroup_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TNSwiftyCheckboxGroup_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		AC0A754B1F268112A1B54A33387DD75B /* TNSwiftyCheckboxViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TNSwiftyCheckboxViewController.swift; sourceTree = "<group>"; };
+		B33748BE92F67FDA4C57648F67B76AF8 /* TNSwiftyCheckboxGroup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TNSwiftyCheckboxGroup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B46ADBD8DDD24BEFA77F22453B0DCAF9 /* TNSwiftyCheckboxGroup.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TNSwiftyCheckboxGroup.modulemap; sourceTree = "<group>"; };
+		B7204AA2986051DD011BF4C6DA9558AC /* Pods-TNSwiftyCheckboxGroup_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TNSwiftyCheckboxGroup_Example-umbrella.h"; sourceTree = "<group>"; };
+		B8B7AE0D740E9B974D917C11A8280A7A /* TNSwiftyCheckboxGroup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TNSwiftyCheckboxGroup-dummy.m"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC7746FAD650EA62CCA4D7A7995F0B95 /* TNSwiftyImageCheckboxView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = TNSwiftyImageCheckboxView.xib; sourceTree = "<group>"; };
+		BCFF55372CABF51B1C5B0ABD96A83631 /* Pods-TNSwiftyCheckboxGroup_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TNSwiftyCheckboxGroup_Tests-umbrella.h"; sourceTree = "<group>"; };
+		CC6850BE872C01A90FC13664E6CF4303 /* Pods-TNSwiftyCheckboxGroup_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TNSwiftyCheckboxGroup_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		DA8520EBFC3F895111FBC484B9914E9F /* Pods-TNSwiftyCheckboxGroup_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TNSwiftyCheckboxGroup_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE086FC2D8BBDC2C23D57651D3FD02B8 /* TNSwiftySquareCheckboxView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = TNSwiftySquareCheckboxView.xib; sourceTree = "<group>"; };
+		E5ED5B01A6C4C2943586DF3B6870A5EA /* TNSwiftyCheckboxGroup.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TNSwiftyCheckboxGroup.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E74AA0BF729C2B0C5B522F7B2303160A /* Pods-TNSwiftyCheckboxGroup_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TNSwiftyCheckboxGroup_Example-frameworks.sh"; sourceTree = "<group>"; };
+		EA164D64B9E2B8400F985E3AA5C5BD1B /* TNSwiftyCheckboxGroup.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TNSwiftyCheckboxGroup.xcconfig; sourceTree = "<group>"; };
+		EEA8C82336BB99C5A024243E11BF2679 /* Pods-TNSwiftyCheckboxGroup_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TNSwiftyCheckboxGroup_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F06A741B79C8FDBA944A5E1B6A2B193F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4993D089907B333E1AA75D1FFA9C56B /* Pods-TNSwiftyCheckboxGroup_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TNSwiftyCheckboxGroup_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F515EA6D3490105492B52B6D2D5B1BD2 /* Pods-TNSwiftyCheckboxGroup_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TNSwiftyCheckboxGroup_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FAE9A7B532DA8B68437E1E19875F732C /* Pods-TNSwiftyCheckboxGroup_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TNSwiftyCheckboxGroup_Example-dummy.m"; sourceTree = "<group>"; };
+		FE999837A015A776A59228534549D3EB /* TNSwiftyCheckboxModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TNSwiftyCheckboxModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01C1EC9151392CFC9B9D795211E6380D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6323B7A7B6ABA18054A83F771E50FCA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41BD5935C751F9931BF0F64E493E97AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DB1947F7244B57AFC5E9EC71BAB172 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA395BDF489239AB5BF19031B3EC5FD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED251D87BA2BE21F7AB0F4CC6DE4734 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C958A69661E0B43B6A232EA0FB337A96 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B38FA392838BF4F4B08EB7BD32E7E34 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0E56BAF401AF5DB360482E9F7AF17FE3 /* TNSwiftyCheckboxCustomLayout.swift */,
+				FE999837A015A776A59228534549D3EB /* TNSwiftyCheckboxModel.swift */,
+				7F1F14CEFEAB2B905F5F57E5D5B30236 /* TNSwiftyCheckboxView.swift */,
+				AC0A754B1F268112A1B54A33387DD75B /* TNSwiftyCheckboxViewController.swift */,
+				8B0A1974697BA434F37FD7EB415D67D9 /* TNSwiftyCircularCheckboxView.swift */,
+				5F2E17161E3476138F4B53BAF6A1B974 /* TNSwiftyCircularCheckboxView.xib */,
+				82EE36658098967EE364FF5629E20C29 /* TNSwiftyImageCheckboxView.swift */,
+				BC7746FAD650EA62CCA4D7A7995F0B95 /* TNSwiftyImageCheckboxView.xib */,
+				93BCE1A96EF1F8B56E9622C3D349CB4B /* TNSwiftySquareCheckboxView.swift */,
+				DE086FC2D8BBDC2C23D57651D3FD02B8 /* TNSwiftySquareCheckboxView.xib */,
+				86E8BC111B78D9E5008441E7 /* Dictionary_Merge.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		302D0FD1DAB07F5A13CC801A9BD678D6 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				8B6CD031A23A0EE893D0D37511AA3C00 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		50EC16F7AA7408464F79A8D6FC9E6079 /* Pods-TNSwiftyCheckboxGroup_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				178264055B9151457F113C35951F281D /* Info.plist */,
+				72D4EE75271184F2CCAB1406C73ACD4A /* Pods-TNSwiftyCheckboxGroup_Tests.modulemap */,
+				EEA8C82336BB99C5A024243E11BF2679 /* Pods-TNSwiftyCheckboxGroup_Tests-acknowledgements.markdown */,
+				210972295AB75238BF82CEB6808E1CD0 /* Pods-TNSwiftyCheckboxGroup_Tests-acknowledgements.plist */,
+				0921464328F34459F008E2ED09A4198A /* Pods-TNSwiftyCheckboxGroup_Tests-dummy.m */,
+				2607C9A7F168FC818451DF637BD925F3 /* Pods-TNSwiftyCheckboxGroup_Tests-frameworks.sh */,
+				6D10ED5E30A400A0DF68D10DD3AA8E10 /* Pods-TNSwiftyCheckboxGroup_Tests-resources.sh */,
+				BCFF55372CABF51B1C5B0ABD96A83631 /* Pods-TNSwiftyCheckboxGroup_Tests-umbrella.h */,
+				DA8520EBFC3F895111FBC484B9914E9F /* Pods-TNSwiftyCheckboxGroup_Tests.debug.xcconfig */,
+				CC6850BE872C01A90FC13664E6CF4303 /* Pods-TNSwiftyCheckboxGroup_Tests.release.xcconfig */,
+			);
+			name = "Pods-TNSwiftyCheckboxGroup_Tests";
+			path = "Target Support Files/Pods-TNSwiftyCheckboxGroup_Tests";
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				58361529F4AFCF53BBDA62C2ABF88478 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		631284066C58578CDD8BDF6F6D5D92C3 /* TNSwiftyCheckboxGroup */ = {
+			isa = PBXGroup;
+			children = (
+				8E8253651C257F42C05683A9F803A1EC /* Pod */,
+				C6FAE30E791F9E31FB99ED3584A6E433 /* Resources */,
+				A8B2B6C8AF7175211B0072C201C80AD9 /* Support Files */,
+			);
+			name = TNSwiftyCheckboxGroup;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				8EE1E58F04F957E8F4F9E1DD9A9FB9EA /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				81F1574CF6D11316EE6561C3FEFAF800 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		81936E55C358A4C53497E48D775F93B6 /* Pods-TNSwiftyCheckboxGroup_Example */ = {
+			isa = PBXGroup;
+			children = (
+				F06A741B79C8FDBA944A5E1B6A2B193F /* Info.plist */,
+				472496463935F7A4A1CF8F8471057581 /* Pods-TNSwiftyCheckboxGroup_Example.modulemap */,
+				586277670347FC14D8AA31231AF39EE9 /* Pods-TNSwiftyCheckboxGroup_Example-acknowledgements.markdown */,
+				F515EA6D3490105492B52B6D2D5B1BD2 /* Pods-TNSwiftyCheckboxGroup_Example-acknowledgements.plist */,
+				FAE9A7B532DA8B68437E1E19875F732C /* Pods-TNSwiftyCheckboxGroup_Example-dummy.m */,
+				E74AA0BF729C2B0C5B522F7B2303160A /* Pods-TNSwiftyCheckboxGroup_Example-frameworks.sh */,
+				297892C9F2EA022CAB1C8D30CE1EDCB7 /* Pods-TNSwiftyCheckboxGroup_Example-resources.sh */,
+				B7204AA2986051DD011BF4C6DA9558AC /* Pods-TNSwiftyCheckboxGroup_Example-umbrella.h */,
+				AA597CCC7BBC0F14D49E1DAFAAE785F5 /* Pods-TNSwiftyCheckboxGroup_Example.debug.xcconfig */,
+				F4993D089907B333E1AA75D1FFA9C56B /* Pods-TNSwiftyCheckboxGroup_Example.release.xcconfig */,
+			);
+			name = "Pods-TNSwiftyCheckboxGroup_Example";
+			path = "Target Support Files/Pods-TNSwiftyCheckboxGroup_Example";
+			sourceTree = "<group>";
+		};
+		81F1574CF6D11316EE6561C3FEFAF800 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				81936E55C358A4C53497E48D775F93B6 /* Pods-TNSwiftyCheckboxGroup_Example */,
+				50EC16F7AA7408464F79A8D6FC9E6079 /* Pods-TNSwiftyCheckboxGroup_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8B6CD031A23A0EE893D0D37511AA3C00 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8E8253651C257F42C05683A9F803A1EC /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				2B38FA392838BF4F4B08EB7BD32E7E34 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		8EE1E58F04F957E8F4F9E1DD9A9FB9EA /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				631284066C58578CDD8BDF6F6D5D92C3 /* TNSwiftyCheckboxGroup */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A8B2B6C8AF7175211B0072C201C80AD9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4992FC6581AF64FD04D699C4F78EF51B /* Info.plist */,
+				B46ADBD8DDD24BEFA77F22453B0DCAF9 /* TNSwiftyCheckboxGroup.modulemap */,
+				EA164D64B9E2B8400F985E3AA5C5BD1B /* TNSwiftyCheckboxGroup.xcconfig */,
+				01F73E5C5AB8051597A454360825B8D5 /* TNSwiftyCheckboxGroup-Private.xcconfig */,
+				B8B7AE0D740E9B974D917C11A8280A7A /* TNSwiftyCheckboxGroup-dummy.m */,
+				90E99DC83F30D328BAFF64D7853EE810 /* TNSwiftyCheckboxGroup-prefix.pch */,
+				7FFCA250EB5E500CA5B6EADBE716D29F /* TNSwiftyCheckboxGroup-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TNSwiftyCheckboxGroup";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6FAE30E791F9E31FB99ED3584A6E433 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				302D0FD1DAB07F5A13CC801A9BD678D6 /* Pod */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A9361D8CE9D2645B3948A21DFF9C21D /* Pods_TNSwiftyCheckboxGroup_Example.framework */,
+				5247A7867F17E311BFD596F5EA501D16 /* Pods_TNSwiftyCheckboxGroup_Tests.framework */,
+				E5ED5B01A6C4C2943586DF3B6870A5EA /* TNSwiftyCheckboxGroup.bundle */,
+				B33748BE92F67FDA4C57648F67B76AF8 /* TNSwiftyCheckboxGroup.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		20243408F1B1078F6E2597EEF27B12AF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36DF767B2D6C9906DE42422898591E9B /* TNSwiftyCheckboxGroup-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E11F3BE934AA463F7179A6C2E56346A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C72596E53F435E7E89B3174736D047F9 /* Pods-TNSwiftyCheckboxGroup_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFE4939990131C33860213A8829F7A00 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECD06E0368EAD990793459282E5B7C0 /* Pods-TNSwiftyCheckboxGroup_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0F036E0AE1FF2C432CC4E23116B67AE4 /* Pods-TNSwiftyCheckboxGroup_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 928C856701D2B71D96D4DE4DF7CBEFAD /* Build configuration list for PBXNativeTarget "Pods-TNSwiftyCheckboxGroup_Tests" */;
+			buildPhases = (
+				063AFDBD465A6AB145832B26041A808E /* Sources */,
+				EED251D87BA2BE21F7AB0F4CC6DE4734 /* Frameworks */,
+				4E11F3BE934AA463F7179A6C2E56346A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B6F161FB8D6923B75F30B0CD9FA88CE /* PBXTargetDependency */,
+			);
+			name = "Pods-TNSwiftyCheckboxGroup_Tests";
+			productName = "Pods-TNSwiftyCheckboxGroup_Tests";
+			productReference = 5247A7867F17E311BFD596F5EA501D16 /* Pods_TNSwiftyCheckboxGroup_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3F599DE5108DA55E114F4B4AEB84B190 /* TNSwiftyCheckboxGroup-TNSwiftyCheckboxGroup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51AFDD6365958CD0FFD542EE3D2270DE /* Build configuration list for PBXNativeTarget "TNSwiftyCheckboxGroup-TNSwiftyCheckboxGroup" */;
+			buildPhases = (
+				C498162D80A18231E280FC9A55D62C2D /* Sources */,
+				DA395BDF489239AB5BF19031B3EC5FD8 /* Frameworks */,
+				7BD69336353806455D700CCBDEED5CD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TNSwiftyCheckboxGroup-TNSwiftyCheckboxGroup";
+			productName = "TNSwiftyCheckboxGroup-TNSwiftyCheckboxGroup";
+			productReference = E5ED5B01A6C4C2943586DF3B6870A5EA /* TNSwiftyCheckboxGroup.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		BD3ACDC0D0D1409D5AAF9B48C3F60E26 /* Pods-TNSwiftyCheckboxGroup_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8DD495EC3B4E9217C468BEE306DA5CC /* Build configuration list for PBXNativeTarget "Pods-TNSwiftyCheckboxGroup_Example" */;
+			buildPhases = (
+				11095248A383326CDC765505FCEAA341 /* Sources */,
+				41BD5935C751F9931BF0F64E493E97AD /* Frameworks */,
+				CFE4939990131C33860213A8829F7A00 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2223F878BA267FF55A8A12560220FDA /* PBXTargetDependency */,
+			);
+			name = "Pods-TNSwiftyCheckboxGroup_Example";
+			productName = "Pods-TNSwiftyCheckboxGroup_Example";
+			productReference = 6A9361D8CE9D2645B3948A21DFF9C21D /* Pods_TNSwiftyCheckboxGroup_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DB2EB2097A4C7B1070B8DCAEBF87AF8F /* TNSwiftyCheckboxGroup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED3E0681FEEDF9831E01DFCAAAF34074 /* Build configuration list for PBXNativeTarget "TNSwiftyCheckboxGroup" */;
+			buildPhases = (
+				79A9EB457DB11D2417C18C9E935C3A92 /* Sources */,
+				01C1EC9151392CFC9B9D795211E6380D /* Frameworks */,
+				A150D8277595F471310FB08346CD9D13 /* Resources */,
+				20243408F1B1078F6E2597EEF27B12AF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E3264B97461198EF62C872FDBFFF096 /* PBXTargetDependency */,
+			);
+			name = TNSwiftyCheckboxGroup;
+			productName = TNSwiftyCheckboxGroup;
+			productReference = B33748BE92F67FDA4C57648F67B76AF8 /* TNSwiftyCheckboxGroup.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD3ACDC0D0D1409D5AAF9B48C3F60E26 /* Pods-TNSwiftyCheckboxGroup_Example */,
+				0F036E0AE1FF2C432CC4E23116B67AE4 /* Pods-TNSwiftyCheckboxGroup_Tests */,
+				DB2EB2097A4C7B1070B8DCAEBF87AF8F /* TNSwiftyCheckboxGroup */,
+				3F599DE5108DA55E114F4B4AEB84B190 /* TNSwiftyCheckboxGroup-TNSwiftyCheckboxGroup */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BD69336353806455D700CCBDEED5CD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EACA22B4B65474329D4D0F47942FAA3 /* TNSwiftyCircularCheckboxView.xib in Resources */,
+				A965063A9E16C7C42A20190F399AC82E /* TNSwiftyImageCheckboxView.xib in Resources */,
+				082D4574ACB96E7BC23B927071050E4F /* TNSwiftySquareCheckboxView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A150D8277595F471310FB08346CD9D13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2E47439423C0E1C01C64E48225BA2D8 /* TNSwiftyCheckboxGroup.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		063AFDBD465A6AB145832B26041A808E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBCE2B40E2A0BA7B602E36A4B8F2D976 /* Pods-TNSwiftyCheckboxGroup_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11095248A383326CDC765505FCEAA341 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F490E467ED4FF0DBB801FD522D2B86A0 /* Pods-TNSwiftyCheckboxGroup_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79A9EB457DB11D2417C18C9E935C3A92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C9ACF250B0BA41B725EB070A0B0F186 /* TNSwiftyCheckboxCustomLayout.swift in Sources */,
+				F2FC9732B2028D3BEEA71165DDFD70E8 /* TNSwiftyCheckboxGroup-dummy.m in Sources */,
+				B5DE0B78A403A7ED1EAF111BBEAC7D69 /* TNSwiftyCheckboxModel.swift in Sources */,
+				A4FB792C9E377D333EEACA6FED967A71 /* TNSwiftyCheckboxView.swift in Sources */,
+				21A315583A1D79BBAE310A3B3E1964D6 /* TNSwiftyCheckboxViewController.swift in Sources */,
+				3B4AEFB39804885EBAE40BED1547923E /* TNSwiftyCircularCheckboxView.swift in Sources */,
+				86E8BC121B78D9E5008441E7 /* Dictionary_Merge.swift in Sources */,
+				DF8640C067B43F9F22B2DDFF274F5AEB /* TNSwiftyCircularCheckboxView.xib in Sources */,
+				C3A870513AC87E1C186C7E08B6BE6ECA /* TNSwiftyImageCheckboxView.swift in Sources */,
+				2DF10A177820BBA515E4F6035C14FC3F /* TNSwiftyImageCheckboxView.xib in Sources */,
+				35CD4250AFA6D038B8C3AA4F0065A3AF /* TNSwiftySquareCheckboxView.swift in Sources */,
+				14104970462B2D4F2D15218D2F6BA47A /* TNSwiftySquareCheckboxView.xib in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C498162D80A18231E280FC9A55D62C2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B6F161FB8D6923B75F30B0CD9FA88CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TNSwiftyCheckboxGroup;
+			target = DB2EB2097A4C7B1070B8DCAEBF87AF8F /* TNSwiftyCheckboxGroup */;
+			targetProxy = 7A171F1055F3E78089D6F003EF4EAC56 /* PBXContainerItemProxy */;
+		};
+		8E3264B97461198EF62C872FDBFFF096 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "TNSwiftyCheckboxGroup-TNSwiftyCheckboxGroup";
+			target = 3F599DE5108DA55E114F4B4AEB84B190 /* TNSwiftyCheckboxGroup-TNSwiftyCheckboxGroup */;
+			targetProxy = 5C08FA46480ED92480FC9B28AF04B568 /* PBXContainerItemProxy */;
+		};
+		C2223F878BA267FF55A8A12560220FDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TNSwiftyCheckboxGroup;
+			target = DB2EB2097A4C7B1070B8DCAEBF87AF8F /* TNSwiftyCheckboxGroup */;
+			targetProxy = EC7EEE5ADFD86E49A3E4AA332A77C5C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00818779E6A79CAD2B588519277E1712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC6850BE872C01A90FC13664E6CF4303 /* Pods-TNSwiftyCheckboxGroup_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TNSwiftyCheckboxGroup_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-TNSwiftyCheckboxGroup_Tests/Pods-TNSwiftyCheckboxGroup_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_TNSwiftyCheckboxGroup_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		054DDB9F32739118537D30D380AE6ECD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01F73E5C5AB8051597A454360825B8D5 /* TNSwiftyCheckboxGroup-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TNSwiftyCheckboxGroup/TNSwiftyCheckboxGroup-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TNSwiftyCheckboxGroup/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TNSwiftyCheckboxGroup/TNSwiftyCheckboxGroup.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TNSwiftyCheckboxGroup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29E2EF087649312641520CE8F1F92308 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01F73E5C5AB8051597A454360825B8D5 /* TNSwiftyCheckboxGroup-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = TNSwiftyCheckboxGroup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		4D17ADF10A56A8EA962ADD6D3536A4A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01F73E5C5AB8051597A454360825B8D5 /* TNSwiftyCheckboxGroup-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TNSwiftyCheckboxGroup/TNSwiftyCheckboxGroup-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TNSwiftyCheckboxGroup/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TNSwiftyCheckboxGroup/TNSwiftyCheckboxGroup.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TNSwiftyCheckboxGroup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		52EF914FE1B0CB1C2A22CD75F46E7458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4993D089907B333E1AA75D1FFA9C56B /* Pods-TNSwiftyCheckboxGroup_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TNSwiftyCheckboxGroup_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-TNSwiftyCheckboxGroup_Example/Pods-TNSwiftyCheckboxGroup_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_TNSwiftyCheckboxGroup_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		598AB5D3FC2596DCC630246FBB79F2AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01F73E5C5AB8051597A454360825B8D5 /* TNSwiftyCheckboxGroup-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = TNSwiftyCheckboxGroup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		7057A915DC75CF69DB403CFB484B73A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA597CCC7BBC0F14D49E1DAFAAE785F5 /* Pods-TNSwiftyCheckboxGroup_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TNSwiftyCheckboxGroup_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-TNSwiftyCheckboxGroup_Example/Pods-TNSwiftyCheckboxGroup_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_TNSwiftyCheckboxGroup_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EEE10B1D89C7C9D0E9C04A31B811D52F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA8520EBFC3F895111FBC484B9914E9F /* Pods-TNSwiftyCheckboxGroup_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TNSwiftyCheckboxGroup_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-TNSwiftyCheckboxGroup_Tests/Pods-TNSwiftyCheckboxGroup_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_TNSwiftyCheckboxGroup_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51AFDD6365958CD0FFD542EE3D2270DE /* Build configuration list for PBXNativeTarget "TNSwiftyCheckboxGroup-TNSwiftyCheckboxGroup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				598AB5D3FC2596DCC630246FBB79F2AC /* Debug */,
+				29E2EF087649312641520CE8F1F92308 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		928C856701D2B71D96D4DE4DF7CBEFAD /* Build configuration list for PBXNativeTarget "Pods-TNSwiftyCheckboxGroup_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEE10B1D89C7C9D0E9C04A31B811D52F /* Debug */,
+				00818779E6A79CAD2B588519277E1712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8DD495EC3B4E9217C468BEE306DA5CC /* Build configuration list for PBXNativeTarget "Pods-TNSwiftyCheckboxGroup_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7057A915DC75CF69DB403CFB484B73A0 /* Debug */,
+				52EF914FE1B0CB1C2A22CD75F46E7458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED3E0681FEEDF9831E01DFCAAAF34074 /* Build configuration list for PBXNativeTarget "TNSwiftyCheckboxGroup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D17ADF10A56A8EA962ADD6D3536A4A2 /* Debug */,
+				054DDB9F32739118537D30D380AE6ECD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

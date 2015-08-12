@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACD81AFB9204008FA782 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* MainMenuViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		86916EBE1B73D87800673202 /* SquareCheckboxesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86916EBD1B73D87800673202 /* SquareCheckboxesViewController.swift */; };
+		86B0736A1B73E27200285D31 /* CircularCheckboxesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B073691B73E27200285D31 /* CircularCheckboxesViewController.swift */; };
+		86B0736C1B73E3E700285D31 /* ImageCheckboxesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B0736B1B73E3E700285D31 /* ImageCheckboxesViewController.swift */; };
+		86E8BC141B79DB0E008441E7 /* ProgrammaticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E8BC131B79DB0E008441E7 /* ProgrammaticViewController.swift */; };
 		C884754A1377E96050A3B43E /* Pods_TNSwiftyCheckboxGroup_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF7F0616E1BEAF2C8911F62 /* Pods_TNSwiftyCheckboxGroup_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F1EE2350F02DDC603D209AA9 /* Pods_TNSwiftyCheckboxGroup_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25CE2C1159A929983D1ABA5 /* Pods_TNSwiftyCheckboxGroup_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -34,13 +38,18 @@
 		607FACD01AFB9204008FA782 /* TNSwiftyCheckboxGroup_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TNSwiftyCheckboxGroup_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = TNSwiftyCheckboxGroup_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* TNSwiftyCheckboxGroup_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TNSwiftyCheckboxGroup_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		86049C131B78D052002B5455 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "../../../../../../../Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/Reveal.framework"; sourceTree = "<group>"; };
+		86916EBD1B73D87800673202 /* SquareCheckboxesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareCheckboxesViewController.swift; sourceTree = "<group>"; };
+		86B073691B73E27200285D31 /* CircularCheckboxesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularCheckboxesViewController.swift; sourceTree = "<group>"; };
+		86B0736B1B73E3E700285D31 /* ImageCheckboxesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCheckboxesViewController.swift; sourceTree = "<group>"; };
+		86E8BC131B79DB0E008441E7 /* ProgrammaticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammaticViewController.swift; sourceTree = "<group>"; };
 		8DD94551CA87256ED993513E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		AF1FC4FACD0F033E50814F96 /* Pods-TNSwiftyCheckboxGroup_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TNSwiftyCheckboxGroup_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TNSwiftyCheckboxGroup_Tests/Pods-TNSwiftyCheckboxGroup_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C25CE2C1159A929983D1ABA5 /* Pods_TNSwiftyCheckboxGroup_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TNSwiftyCheckboxGroup_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +81,7 @@
 		4B3CC178E879A20994EC6B92 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				86049C131B78D052002B5455 /* Reveal.framework */,
 				C25CE2C1159A929983D1ABA5 /* Pods_TNSwiftyCheckboxGroup_Example.framework */,
 				FBF7F0616E1BEAF2C8911F62 /* Pods_TNSwiftyCheckboxGroup_Tests.framework */,
 			);
@@ -94,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* TNSwiftyCheckboxGroup_Example.app */,
-				607FACE51AFB9204008FA782 /* Tests.xctest */,
+				607FACE51AFB9204008FA782 /* TNSwiftyCheckboxGroup_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				86B0736D1B73E8DE00285D31 /* View Controllers */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -146,6 +156,18 @@
 				8DD94551CA87256ED993513E /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		86B0736D1B73E8DE00285D31 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD71AFB9204008FA782 /* MainMenuViewController.swift */,
+				86916EBD1B73D87800673202 /* SquareCheckboxesViewController.swift */,
+				86B073691B73E27200285D31 /* CircularCheckboxesViewController.swift */,
+				86B0736B1B73E3E700285D31 /* ImageCheckboxesViewController.swift */,
+				86E8BC131B79DB0E008441E7 /* ProgrammaticViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 		B42C508787DD27586614B5BB /* Pods */ = {
@@ -200,7 +222,7 @@
 			);
 			name = TNSwiftyCheckboxGroup_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* TNSwiftyCheckboxGroup_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -358,7 +380,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				86B0736A1B73E27200285D31 /* CircularCheckboxesViewController.swift in Sources */,
+				86B0736C1B73E3E700285D31 /* ImageCheckboxesViewController.swift in Sources */,
+				607FACD81AFB9204008FA782 /* MainMenuViewController.swift in Sources */,
+				86916EBE1B73D87800673202 /* SquareCheckboxesViewController.swift in Sources */,
+				86E8BC141B79DB0E008441E7 /* ProgrammaticViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,9 +513,22 @@
 			baseConfigurationReference = CD72103C1A24442864277FB9 /* Pods-TNSwiftyCheckboxGroup_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries",
+				);
 				INFOPLIST_FILE = TNSwiftyCheckboxGroup/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"TNSwiftyCheckboxGroup\"",
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -499,9 +538,22 @@
 			baseConfigurationReference = 34CF445E0B1DBC9B67653BB6 /* Pods-TNSwiftyCheckboxGroup_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries",
+				);
 				INFOPLIST_FILE = TNSwiftyCheckboxGroup/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"TNSwiftyCheckboxGroup\"",
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

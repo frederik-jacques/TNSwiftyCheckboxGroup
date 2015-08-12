@@ -1,0 +1,6 @@
+framework module TNSwiftyCheckboxGroup {
+  umbrella header "TNSwiftyCheckboxGroup-umbrella.h"
+
+  export *
+  module * { export * }
+}

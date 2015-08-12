@@ -1,0 +1,14 @@
+PODS:
+  - TNSwiftyCheckboxGroup (0.1.0)
+
+DEPENDENCIES:
+  - TNSwiftyCheckboxGroup (from `../`)
+
+EXTERNAL SOURCES:
+  TNSwiftyCheckboxGroup:
+    :path: ../
+
+SPEC CHECKSUMS:
+  TNSwiftyCheckboxGroup: dd81ca985c13c92c52bd702bc98f385ded84aa15
+
+COCOAPODS: 0.38.2
