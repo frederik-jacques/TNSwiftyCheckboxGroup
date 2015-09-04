@@ -45,7 +45,7 @@ class ProgrammaticViewController: UIViewController, TNSwiftyCheckboxViewControll
             You can set the name of the label and whether or not it should be checked.
             When the checked argument is not set, the checkbox will default be unchecked.
         */
-        var checkboxModels = [
+        let checkboxModels = [
             
             TNSwiftyCheckboxModel(name: "Elephant with a very long proboscis"),
             TNSwiftyCheckboxModel(name: "Tiger", checked: true),
@@ -89,8 +89,8 @@ class ProgrammaticViewController: UIViewController, TNSwiftyCheckboxViewControll
             
         ]
         
-        let horizontalConstraints = NSLayoutConstraint.constraintsWithVisualFormat("H:|-[checkboxVC]-|", options: NSLayoutFormatOptions(0), metrics: nil, views: views)
-        let verticalConstraints = NSLayoutConstraint.constraintsWithVisualFormat("V:|-[checkboxVC]-|", options: NSLayoutFormatOptions(0), metrics: nil, views: views)
+        let horizontalConstraints = NSLayoutConstraint.constraintsWithVisualFormat("H:|-[checkboxVC]-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: views)
+        let verticalConstraints = NSLayoutConstraint.constraintsWithVisualFormat("V:|-[checkboxVC]-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: views)
     
         view.addConstraints(horizontalConstraints)
         view.addConstraints(verticalConstraints)
@@ -124,7 +124,7 @@ class ProgrammaticViewController: UIViewController, TNSwiftyCheckboxViewControll
     // MARK: TNSwiftyCheckboxViewControllerDelegate methods
     func swiftyCheckboxViewController(viewController: TNSwiftyCheckboxViewController, checkedValueChangedTo newCheckedValue: Bool, ofCheckboxModel checkboxModel: TNSwiftyCheckboxModel) {
         
-        println("[ProgrammaticVC] Checkboxmodel \(checkboxModel.name) its value changed to \(newCheckedValue)")
+        print("[ProgrammaticVC] Checkboxmodel \(checkboxModel.name) its value changed to \(newCheckedValue)")
         
     }
 

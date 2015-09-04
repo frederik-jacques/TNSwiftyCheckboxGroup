@@ -97,8 +97,8 @@ public class TNSwiftyCheckboxView: UICollectionViewCell {
     
         Override this method in your own TNSwiftyCheckboxView subclasses.
     
-        :param: checkValue  Check the checkbox
-        :param: animated    Animate the change
+        - parameter checkValue:  Check the checkbox
+        - parameter animated:    Animate the change
     */
     public func checkCheckbox( checkValue:Bool, withAnimation animated:Bool ) {
         

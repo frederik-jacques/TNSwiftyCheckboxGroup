@@ -49,7 +49,7 @@ class CircularCheckboxesViewController: UIViewController {
         
         if( segue.identifier == "seg-circular-checkboxes" ) {
             
-            var checkboxModels = [
+            let checkboxModels = [
                 
                 TNSwiftyCheckboxModel(name: "Elephant with a very long proboscis", checked: false),
                 TNSwiftyCheckboxModel(name: "Tiger", checked: true),

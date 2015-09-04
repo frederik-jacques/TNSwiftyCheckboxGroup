@@ -49,7 +49,7 @@ class SquareCheckboxesViewController: UIViewController, TNSwiftyCheckboxViewStyl
         
         if( segue.identifier == "seg-square-checkboxes" ) {
 
-            var checkboxModels = [
+            let checkboxModels = [
                 
                 TNSwiftyCheckboxModel(name: "Elephant with a very long proboscis", checked: false),
                 TNSwiftyCheckboxModel(name: "Tiger", checked: true),

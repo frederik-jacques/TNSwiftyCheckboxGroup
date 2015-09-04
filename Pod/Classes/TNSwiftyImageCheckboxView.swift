@@ -70,7 +70,7 @@ class TNSwiftyImageCheckboxView: TNSwiftyCheckboxView {
     private func createImageView(){
     
         imageView = UIImageView()
-        imageView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
         checkboxContentView.addSubview(imageView)
         
     }
@@ -80,12 +80,12 @@ class TNSwiftyImageCheckboxView: TNSwiftyCheckboxView {
     */
     private func setupConstraints(){
     
-        var views = [
+        let views = [
             "imageView" : imageView
         ]
         
-        let horizontalConstraintForImageView = NSLayoutConstraint.constraintsWithVisualFormat("H:|[imageView]|", options: NSLayoutFormatOptions(0), metrics: nil, views: views)
-        let verticalConstraintsForImageView = NSLayoutConstraint.constraintsWithVisualFormat("V:|[imageView]|", options: NSLayoutFormatOptions(0), metrics: nil, views: views)
+        let horizontalConstraintForImageView = NSLayoutConstraint.constraintsWithVisualFormat("H:|[imageView]|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: views)
+        let verticalConstraintsForImageView = NSLayoutConstraint.constraintsWithVisualFormat("V:|[imageView]|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: views)
         
         checkboxContentView.addConstraints(horizontalConstraintForImageView)
         checkboxContentView.addConstraints(verticalConstraintsForImageView)
@@ -96,8 +96,8 @@ class TNSwiftyImageCheckboxView: TNSwiftyCheckboxView {
     /**
     This method is called when a cell has been touched.
     
-    :param: checkValue  Check the checkbox
-    :param: animated    Animate the change
+    - parameter checkValue:  Check the checkbox
+    - parameter animated:    Animate the change
     */
     override func checkCheckbox(checkValue: Bool, withAnimation animated: Bool) {
         

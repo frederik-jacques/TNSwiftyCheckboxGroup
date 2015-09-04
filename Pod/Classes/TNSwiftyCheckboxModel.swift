@@ -42,8 +42,8 @@ public class TNSwiftyCheckboxModel: NSObject {
     
         Create a new `TNSwiftyCheckboxModel` object with a name and checked state
     
-        :param: name The name that will appear in the UILabel
-        :param: checked Should the checkbox be checked or unchecked
+        - parameter name: The name that will appear in the UILabel
+        - parameter checked: Should the checkbox be checked or unchecked
     
     */
     public init( name:String, checked:Bool ) {
@@ -59,7 +59,7 @@ public class TNSwiftyCheckboxModel: NSObject {
         
         Create a new `TNSwiftyCheckboxModel` object with a name. The checkbox will be unchecked.
     
-        :param: name The name that will appear in the UILabel
+        - parameter name: The name that will appear in the UILabel
     
     */
     public convenience init( name:String ) {

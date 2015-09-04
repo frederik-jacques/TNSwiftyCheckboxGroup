@@ -93,7 +93,7 @@ class TNSwiftySquareCheckboxView: TNSwiftyCheckboxView {
         
         let padding = styleOptions![TNSwiftyCheckboxStyleOptions.CheckboxPadding] as! Int
         
-        let rect = checkboxContentView.bounds.rectByInsetting(dx: CGFloat(padding), dy: CGFloat(padding))
+        let rect = checkboxContentView.bounds.insetBy(dx: CGFloat(padding), dy: CGFloat(padding))
         
         innerSquareShapeLayer = CAShapeLayer()
         innerSquareShapeLayer.path = UIBezierPath(rect: rect).CGPath
@@ -111,8 +111,8 @@ class TNSwiftySquareCheckboxView: TNSwiftyCheckboxView {
     /**
     This method is called when a cell has been touched.
     
-    :param: checkValue  Check the checkbox
-    :param: animated    Animate the change
+    - parameter checkValue:  Check the checkbox
+    - parameter animated:    Animate the change
     */
     override func checkCheckbox(checkValue: Bool, withAnimation animated: Bool) {
         

@@ -29,15 +29,15 @@ class TNSwiftyCheckboxCustomLayout: UICollectionViewFlowLayout {
    
     var maximumCellSpacing = CGFloat(9.0)
     
-    override func layoutAttributesForElementsInRect(rect: CGRect) -> [AnyObject]? {
+    override func layoutAttributesForElementsInRect(rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         
-        let attributesToReturn = super.layoutAttributesForElementsInRect(rect) as? [UICollectionViewLayoutAttributes]
-        
+        let attributesToReturn = super.layoutAttributesForElementsInRect(rect) as [UICollectionViewLayoutAttributes]!
+
         for attributes in attributesToReturn ?? [] {
             
             if attributes.representedElementKind == nil {
                 
-                attributes.frame = self.layoutAttributesForItemAtIndexPath(attributes.indexPath).frame
+                attributes.frame = self.layoutAttributesForItemAtIndexPath(attributes.indexPath)!.frame
                 
             }
             
@@ -46,39 +46,50 @@ class TNSwiftyCheckboxCustomLayout: UICollectionViewFlowLayout {
         return attributesToReturn
     }
     
-    override func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath) -> UICollectionViewLayoutAttributes! {
+    override func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath) -> UICollectionViewLayoutAttributes? {
         
-        let currentAttributes = super.layoutAttributesForItemAtIndexPath(indexPath)
-        
-        let sectionInset = (self.collectionView?.collectionViewLayout as! UICollectionViewFlowLayout).sectionInset
-        
-        if indexPath.item == 0 {
-        
-            let currentFrame = currentAttributes.frame
-            currentAttributes.frame = CGRect(x: sectionInset.left, y: currentFrame.origin.y, width: currentFrame.width, height: currentFrame.height)
+        if let currentAttributes = super.layoutAttributesForItemAtIndexPath( indexPath ) {
             
-            return currentAttributes
+            let attributesToAdjust = currentAttributes.copy() as? UICollectionViewLayoutAttributes
+            
+            let sectionInset = (self.collectionView?.collectionViewLayout as! UICollectionViewFlowLayout).sectionInset
+            
+            if indexPath.item == 0 {
+    
+                let currentFrame = attributesToAdjust!.frame
+                attributesToAdjust!.frame = CGRect(x: sectionInset.left, y: currentFrame.origin.y, width: currentFrame.width, height: currentFrame.height)
+                
+                return attributesToAdjust
+                
+            }
+            
+            let previousIndexPath = NSIndexPath(forItem: indexPath.item - 1, inSection: indexPath.section)
+            
+            let attributesOfPreviousCell = super.layoutAttributesForItemAtIndexPath(previousIndexPath)?.copy() as? UICollectionViewLayoutAttributes
+            
+            let previousFrame = attributesOfPreviousCell?.frame
+            
+            let prevFrameRightPoint = previousFrame!.origin.x + previousFrame!.size.width + maximumCellSpacing
+    
+            let currentFrame = attributesToAdjust!.frame
+    
+            let stretchedCurrentFrame = CGRect(x: 0, y: currentFrame.origin.y, width: self.collectionView!.frame.width, height: currentFrame.height)
+    
+            if CGRectIntersectsRect(previousFrame!, stretchedCurrentFrame) {
+    
+                attributesToAdjust!.frame = CGRect(x: prevFrameRightPoint, y: currentFrame.origin.y, width: currentFrame.width, height: currentFrame.height)
+                
+            } else {
+                
+                attributesToAdjust!.frame = CGRect(x: sectionInset.left, y: currentFrame.origin.y, width: currentFrame.width, height: currentFrame.height)
+                
+            }
+            
+            return attributesToAdjust
+            
         }
         
-        let previousIndexPath = NSIndexPath(forItem: indexPath.item-1, inSection: indexPath.section)
-        let previousFrame = self.layoutAttributesForItemAtIndexPath(previousIndexPath).frame
-        let prevFrameRightPoint = previousFrame.origin.x + previousFrame.size.width + maximumCellSpacing
-        
-        let currentFrame = currentAttributes.frame
-
-        let stretchedCurrentFrame = CGRect(x: 0, y: currentFrame.origin.y, width: self.collectionView!.frame.width, height: currentFrame.height)
-        
-        if CGRectIntersectsRect(previousFrame, stretchedCurrentFrame) {
-            
-            currentAttributes.frame = CGRect(x: prevFrameRightPoint, y: currentFrame.origin.y, width: currentFrame.width, height: currentFrame.height)
-            
-        } else {
-            
-            currentAttributes.frame = CGRect(x: sectionInset.left, y: currentFrame.origin.y, width: currentFrame.width, height: currentFrame.height)
-            
-        }
-        
-        return currentAttributes
+        return nil
         
     }
     

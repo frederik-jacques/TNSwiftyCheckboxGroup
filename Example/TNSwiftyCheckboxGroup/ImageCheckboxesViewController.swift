@@ -49,7 +49,7 @@ class ImageCheckboxesViewController: UIViewController {
         
         if( segue.identifier == "seg-image-checkboxes" ) {
             
-            var checkboxModels = [
+            let checkboxModels = [
                 
                 TNSwiftyCheckboxModel(name: "Elephant with a very long proboscis", checked: false),
                 TNSwiftyCheckboxModel(name: "Tiger", checked: true),

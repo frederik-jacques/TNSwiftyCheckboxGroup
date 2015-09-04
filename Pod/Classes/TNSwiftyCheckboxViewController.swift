@@ -26,9 +26,9 @@ import UIKit
 
     Conform to this protocol by setting your own class as the delegate of the view controller if you want to be updated if a checkbox gets checked of unchecked.
 
-    :param: viewController      the view controller
-    :param: newCheckedValue     the new value of the checkbox model that has been changed
-    :param: checkboxModel       the checkbox model that has been changed
+    - parameter viewController:      the view controller
+    - parameter newCheckedValue:     the new value of the checkbox model that has been changed
+    - parameter checkboxModel:       the checkbox model that has been changed
 
 */
 public protocol TNSwiftyCheckboxViewControllerDelegate:class {
@@ -41,7 +41,7 @@ public protocol TNSwiftyCheckboxViewControllerDelegate:class {
 
     Conform to this protocol by setting your own class as the data source of the view controller if you want to override certain styling options.
 
-    :returns: An option dictionary
+    - returns: An option dictionary
 
     **Note:** The key constants are defined in the `TNSwiftyCheckboxStyleOptions` struct.
 
@@ -183,7 +183,7 @@ public class TNSwiftyCheckboxViewController: UICollectionViewController, UIColle
             
             if let styleDataSource = styleDataSource {
                 
-                var dataSourceOptions = styleDataSource.styleDictionaryForCheckboxView()
+                let dataSourceOptions = styleDataSource.styleDictionaryForCheckboxView()
                 
                 /*  If there is a styling datasource provided, merge those keys with the ones of the default dictionary.
                     This way the user doesn't have to specify every key if he only wants to change one option   */
@@ -272,7 +272,7 @@ public class TNSwiftyCheckboxViewController: UICollectionViewController, UIColle
         
     }
 
-    required public init(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
 
         super.init(coder: aDecoder)
         
@@ -283,7 +283,7 @@ public class TNSwiftyCheckboxViewController: UICollectionViewController, UIColle
         
         super.viewDidLoad()
         
-        view.setTranslatesAutoresizingMaskIntoConstraints(false)
+        view.translatesAutoresizingMaskIntoConstraints = false
         
         collectionView?.collectionViewLayout = layout
         
@@ -329,8 +329,8 @@ public class TNSwiftyCheckboxViewController: UICollectionViewController, UIColle
         This method will configure the cell for a given indexpath.
         In this method the label or image gets set.
     
-        :param: cell        The cell that needs to be configured
-        :param: indexPath   The indexPath of the cell which needs to be configured
+        - parameter cell:        The cell that needs to be configured
+        - parameter indexPath:   The indexPath of the cell which needs to be configured
     
     */
     private func configureCell( cell:TNSwiftyCheckboxView, forIndexPath indexPath:NSIndexPath ) {
@@ -352,7 +352,7 @@ public class TNSwiftyCheckboxViewController: UICollectionViewController, UIColle
     /**
     Use this method to register the class name of your custom checkbox view
     
-    :param: className The name of the class
+    - parameter className: The name of the class
     */
     public func registerCustomViewWithClassName( className:String ) {
         
@@ -363,7 +363,7 @@ public class TNSwiftyCheckboxViewController: UICollectionViewController, UIColle
     /**
         Convenience method to check if all checkboxes are checked.
     
-        :returns: Boolean
+        - returns: Boolean
     */
     public func areAllCheckboxesChecked() -> Bool {
         
@@ -374,7 +374,7 @@ public class TNSwiftyCheckboxViewController: UICollectionViewController, UIColle
     /**
         Convenience method to check if all checkboxes are unchecked.
     
-        :returns: Boolean
+        - returns: Boolean
     */
     public func areAllCheckboxesUnchecked() -> Bool {
         
