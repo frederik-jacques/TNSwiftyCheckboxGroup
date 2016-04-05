@@ -1,43 +1,43 @@
 /*
-Copyright (c) 2015 Frederik Jacques <frederik@the-nerd.be>
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-*/
+ Copyright (c) 2015 Frederik Jacques <frederik@the-nerd.be>
+ 
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ 
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ THE SOFTWARE.
+ */
 
 import UIKit
 
 /**
-
-    This class is used to show a circular checkbox.
-
-    Note: Styling is possible by setting your own class as the `styleDataSource` for the `TNSwiftyCheckboxViewController`. The key constants are defined in `TNSwiftyCheckboxStyleOptions`.
-
-*/
+ 
+ This class is used to show a circular checkbox.
+ 
+ Note: Styling is possible by setting your own class as the `styleDataSource` for the `TNSwiftyCheckboxViewController`. The key constants are defined in `TNSwiftyCheckboxStyleOptions`.
+ 
+ */
 
 class TNSwiftyCircularCheckboxView: TNSwiftyCheckboxView {
-
+    
     // MARK: - IBOutlets
     
     // MARK: - Properties
     private var outerCircleShapeLayer:CAShapeLayer!
     private var innerCircleShapeLayer:CAShapeLayer!
-
+    
     // MARK: - Initializers methods
     
     // MARK: - Lifecycle methods
@@ -64,8 +64,8 @@ class TNSwiftyCircularCheckboxView: TNSwiftyCheckboxView {
     
     // MARK: - Private methods
     /**
-        This method will create the outer circle of the checkbox.
-    */
+     This method will create the outer circle of the checkbox.
+     */
     private func createOuterCircle() {
         
         let rect = checkboxContentView.bounds
@@ -83,8 +83,8 @@ class TNSwiftyCircularCheckboxView: TNSwiftyCheckboxView {
     }
     
     /**
-        This method will create the inner circle of the checkbox.
-    */
+     This method will create the inner circle of the checkbox.
+     */
     private func createInnerCircle() {
         
         let padding = styleOptions![TNSwiftyCheckboxStyleOptions.CheckboxPadding] as! Int
@@ -105,11 +105,11 @@ class TNSwiftyCircularCheckboxView: TNSwiftyCheckboxView {
     
     // MARK: - Public methods
     /**
-    This method is called when a cell has been touched.
-    
-    - parameter checkValue:  Check the checkbox
-    - parameter animated:    Animate the change
-    */
+     This method is called when a cell has been touched.
+     
+     :param: checkValue  Check the checkbox
+     :param: animated    Animate the change
+     */
     override func checkCheckbox(checkValue: Bool, withAnimation animated: Bool) {
         
         let duration = checkValue ? 0.3 : 0.3
@@ -154,6 +154,4 @@ class TNSwiftyCircularCheckboxView: TNSwiftyCheckboxView {
     
     // MARK: - Delegate methods
     
-    
-
 }

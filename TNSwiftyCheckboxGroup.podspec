@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "TNSwiftyCheckboxGroup"
-  s.version          = "0.1.0"
+  s.version          = "1.0.1"
   s.summary          = "A Swift component to create checkbox groups based on UICollectionView."
   s.description      = <<-DESC
                        With this component you can create checkbox groups with various styles, like

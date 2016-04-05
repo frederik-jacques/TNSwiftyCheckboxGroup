@@ -24,7 +24,7 @@ THE SOFTWARE.
 
 extension Dictionary {
     
-    internal func merge<Key,Value>(var dict1: [Key: Value], dict2: [Key: Value]?) -> [Key: Value] {
+    internal func merge<Key,Value>(inout dict1: [Key: Value], dict2: [Key: Value]?) -> [Key: Value] {
         
         if let dict2 = dict2 {
         

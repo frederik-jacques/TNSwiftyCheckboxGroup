@@ -1,37 +1,37 @@
 /*
-Copyright (c) 2015 Frederik Jacques <frederik@the-nerd.be>
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-*/
+ Copyright (c) 2015 Frederik Jacques <frederik@the-nerd.be>
+ 
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ 
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ THE SOFTWARE.
+ */
 
 import UIKit
 
 /**
-
-This class is used to show a square checkbox.
-
-Note: Styling is possible by setting your own class as the `styleDataSource` for the `TNSwiftyCheckboxViewController`. The key constants are defined in `TNSwiftyCheckboxStyleOptions`.
-
-*/
+ 
+ This class is used to show a square checkbox.
+ 
+ Note: Styling is possible by setting your own class as the `styleDataSource` for the `TNSwiftyCheckboxViewController`. The key constants are defined in `TNSwiftyCheckboxStyleOptions`.
+ 
+ */
 
 class TNSwiftySquareCheckboxView: TNSwiftyCheckboxView {
-
+    
     // MARK: - IBOutlets
     
     // MARK: - Properties
@@ -47,13 +47,13 @@ class TNSwiftySquareCheckboxView: TNSwiftyCheckboxView {
     
     // MARK: - Lifecycle methods
     override func prepareForReuse() {
-                
+        
         super.prepareForReuse()
         
     }
     
     override func setup() {
-
+        
         if outerSquareShapeLayer == nil {
             createOuterSquare()
         }
@@ -68,10 +68,10 @@ class TNSwiftySquareCheckboxView: TNSwiftyCheckboxView {
     
     // MARK: - Private methods
     /**
-        This method will create the outer square of the checkbox.
-    */
+     This method will create the outer square of the checkbox.
+     */
     private func createOuterSquare(){
-    
+        
         let rect = checkboxContentView.bounds
         
         outerSquareShapeLayer = CAShapeLayer()
@@ -87,8 +87,8 @@ class TNSwiftySquareCheckboxView: TNSwiftyCheckboxView {
     }
     
     /**
-        This method will create the inner square of the checkbox.
-    */
+     This method will create the inner square of the checkbox.
+     */
     private func createInnerSquare(){
         
         let padding = styleOptions![TNSwiftyCheckboxStyleOptions.CheckboxPadding] as! Int
@@ -109,11 +109,11 @@ class TNSwiftySquareCheckboxView: TNSwiftyCheckboxView {
     
     // MARK: - Public methods
     /**
-    This method is called when a cell has been touched.
-    
-    - parameter checkValue:  Check the checkbox
-    - parameter animated:    Animate the change
-    */
+     This method is called when a cell has been touched.
+     
+     :param: checkValue  Check the checkbox
+     :param: animated    Animate the change
+     */
     override func checkCheckbox(checkValue: Bool, withAnimation animated: Bool) {
         
         let duration = checkValue ? 0.3 : 0.3
